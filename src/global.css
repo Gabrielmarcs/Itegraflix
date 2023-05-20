@@ -1,0 +1,74 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  background-color: #2D2B2B;
+}
+
+.logo, h1{
+  display: inline-block;
+  vertical-align: text-top;
+}
+h1:hover{
+  color: #ac5901;
+}
+
+.logo{
+  top: 15px;
+  margin-left: 50px;
+  width: 54px;
+  height: 69px;
+  opacity: 1;
+}
+
+.linha{
+  display: flex;
+  border-color: #FB8200;
+  size: 100%;
+}
+
+h1{
+  left: 160px;
+  width: 198px;
+  height: 13px;
+  text-align: center;
+  color: #FB8200;
+  font-weight: bold;
+
+}
+p{
+  color: #e7e4e4;
+  margin-left: 55px;
+  top: 122px;
+  left: 106px;
+  width: 127px;
+  height: 37px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.Movies, .capas{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  column-gap: 2rem;
+  margin-left: 8px;
+  margin-right: 40px;
+}
+
+li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.capas{
+  width: 197px;
+  height: 296px;
+  border-radius: 8px;
+  background: transparent;
+}
+
+span{
+  font-weight: bold;
+  color: #E7E4E4;
+}
+
