@@ -1,0 +1,61 @@
+.movieTitle{
+    top: 128px;
+    left: 94px;
+    width: 472px;
+    height: 37px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #E7E4E4;
+    opacity: 1;
+    margin-left: 55px;
+}
+
+.capa{
+    top: 193px;
+    left: 94px;
+    width: 353px;
+    height: 530px;
+    margin-left: 55px;
+    margin-top: 20px;
+    border-radius: 0.5rem;
+}
+
+.movie{
+    display: flex;
+}
+
+.details{
+    display: flex;
+    vertical-align: baseline;
+}
+
+.star{
+    top: 199px;
+    left: 522px;
+    width: 21px;
+    height: 20px;
+    color: #FB8200;
+}
+
+.vote{
+    font-size: 24px/32px;
+    font-weight: bold;
+    text-align: left;
+    color: #FB8200;
+}
+
+.popularity{
+    display: flex;
+    color: #919191;
+    font-weight: normal;
+    margin-left: -30px;
+}
+
+.text{
+    align-self: center;
+    margin-left: -220px;
+    margin-top: 0;    
+}
+

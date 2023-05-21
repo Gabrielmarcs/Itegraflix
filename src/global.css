@@ -3,11 +3,11 @@
   background-color: #2D2B2B;
 }
 
-.logo, h1{
+.logo, h1,a{
   display: inline-block;
   vertical-align: text-top;
 }
-h1:hover{
+a:hover{
   color: #ac5901;
 }
 
@@ -22,17 +22,17 @@ h1:hover{
 .linha{
   display: flex;
   border-color: #FB8200;
-  size: 100%;
+  size: page;
 }
 
-h1{
+.title, a{
   left: 160px;
   width: 198px;
   height: 13px;
   text-align: center;
   color: #FB8200;
   font-weight: bold;
-
+  text-decoration: none;
 }
 p{
   color: #e7e4e4;
@@ -45,30 +45,40 @@ p{
   font-size: 25px;
 }
 
-.Movies, .capas{
+article section ul{
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-  column-gap: 2rem;
-  margin-left: 8px;
-  margin-right: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 3rem;
+  row-gap: 25rem;
 }
 
-li{
+article section ul li{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 
-.capas{
+article section ul li a img{
   width: 197px;
   height: 296px;
-  border-radius: 8px;
-  background: transparent;
+  border-radius: 1rem;
+  margin-bottom: 2px;
+  margin-left: 15px;
+}
+
+article section ul li a{
+  transition: all 0.3s;
+}
+
+article section ul li a:hover{
+  transform: scale(1.1);
 }
 
 span{
   font-weight: bold;
   color: #E7E4E4;
+  float: left;
+  margin-left: 16px;
+  text-align: left;
 }
-
