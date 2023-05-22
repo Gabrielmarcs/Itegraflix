@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Projeto ITEGRAFLIX - Exibindo os 10 filmes mais populares
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto utiliza a biblioteca React e a API do TMDB (The Movie Database) para exibir os 10 filmes mais populares. A página inicial do projeto apresenta uma lista dos filmes, juntamente com cartazes e títulos. Clicar em um filme redireciona o usuário para a página de detalhes do filme.
 
-## Available Scripts
+## Pré-requisitos
 
-In the project directory, you can run:
+Node.js e o NPM (Node Package Manager) instalados em sua máquina antes de executar o projeto.
 
-### `npm start`
+## Instalação
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Siga as etapas abaixo para configurar e executar o projeto ITEGRAFLIX:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Faça o download do código-fonte do projeto.
+2. Abra um terminal e navegue até o diretório raiz do projeto.
 
-### `npm test`
+```bash
+cd /caminho/para/o/diretorio/do/projeto
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Execute o comando `npm install` para instalar as dependências do projeto.
 
-### `npm run build`
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Abra o arquivo `src/config.js` e substitua `apiKey` pelo sua própria chave de API do TMDB. Você pode obter uma chave de API gratuitamente se registrar no site [TMDB](https://www.themoviedb.org/documentation/api).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. Execute o comando `npm start` para iniciar o servidor de desenvolvimento.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+6. Abra seu navegador e acesse `http://localhost:3000` para visualizar o ITEGRAFLIX.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Funcionalidades
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A página inicial do ITEGRAFLIX exibe uma lista dos 10 filmes mais populares. Os filmes são obtidos através da API do TMDB e são renderizados na página utilizando o React.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Ao clicar em um filme, o usuário é redirecionado para a página de detalhes do filme, onde informações adicionais sobre o filme são exibidas.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Componentes
 
-## Learn More
+O projeto possui os seguintes componentes:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `Home`: O componente principal que exibe a página inicial do ITEGRAFLIX. Ele faz uma solicitação à API do TMDB para obter os filmes populares e renderiza a lista de filmes na página.
+- `Details`: O componente responsável por exibir a página de detalhes do filme. Ele faz uma solicitação à API do TMDB para obter informações detalhadas sobre um filme específico.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### API do TMDB
 
-### Code Splitting
+O projeto utiliza a API do TMDB para obter informações sobre os filmes. A chave de API é necessária para fazer solicitações à API forneça sua própria chave de API no arquivo `src/config.js`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Rotas
 
-### Analyzing the Bundle Size
+O projeto utiliza o React Router para criar rotas. A rota `/` corresponde à página inicial, onde os filmes são exibidos. A rota `/details/:id` corresponde à página de detalhes do filme, onde informações adicionais sobre o filme são exibidas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Estilização
 
-### Making a Progressive Web App
+O projeto utiliza classes CSS para estilizar os elementos da página. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Referências
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- https://nodejs.org/en
+- https://react-icons.github.io/react-icons/
+- https://www.youtube.com/@GirlCoding/about
+- https://developer.themoviedb.org/v4/reference/intro/getting-started
+- https://react.dev/
+- https://www.w3schools.com/js/
