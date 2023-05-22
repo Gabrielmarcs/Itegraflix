@@ -2,7 +2,6 @@ import Logo from "/home/gabriel/Área de Trabalho/itegraflix/src/img/Wally.png"
 import { useState, useEffect } from "react"
 import { apiKey } from "../../config"
 import { Link } from "react-router-dom"
-import {AiOutlineLoading3Quarters} from "react-icons/ai"
 
 
 
@@ -30,7 +29,6 @@ function Home() {
             <hr className="linha"/>            
             <p>Populares</p>
 
-            <AiOutlineLoading3Quarters className="load"/>
             <article>
                 <section>
                     <ul className="movies">
