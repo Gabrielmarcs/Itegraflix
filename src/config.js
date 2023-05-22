@@ -1,1 +1,1 @@
-export const apiKey = '1a1c319a98f9204ca9884a4faeab05e3';
+export const apiKey = 'sua chave aqui';
