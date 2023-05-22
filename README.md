@@ -66,3 +66,4 @@ O projeto utiliza classes CSS para estilizar os elementos da página.
 - https://developer.themoviedb.org/v4/reference/intro/getting-started
 - https://react.dev/
 - https://www.w3schools.com/js/
+- https://xd.adobe.com/view/1d3368f1-16d0-4121-98f3-a791905354d3-4860/specs/
