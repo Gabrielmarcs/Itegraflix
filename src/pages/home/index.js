@@ -2,6 +2,8 @@ import Logo from "/home/gabriel/Área de Trabalho/itegraflix/src/img/Wally.png"
 import { useState, useEffect } from "react"
 import { apiKey } from "../../config"
 import { Link } from "react-router-dom"
+import {AiOutlineLoading3Quarters} from "react-icons/ai"
+
 
 
 function Home() {
@@ -12,8 +14,9 @@ function Home() {
         fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
             .then(response => response.json())
             .then(data => setMovies(data.results.slice(0,10)))
+            
     }, [])
-
+    
     return(
         
 
@@ -27,13 +30,17 @@ function Home() {
             <hr className="linha"/>            
             <p>Populares</p>
 
+            <AiOutlineLoading3Quarters className="load"/>
             <article>
                 <section>
                     <ul className="movies">
                         {movies.map(movie => {
                             return(
                                 <li key={movie.id}>
-                                    <Link to={`/details/${movie.id}`}><img src={`${image_path}${movie.poster_path}`} alt={movie.title}/><span>{movie.title}</span></Link>
+                                    <Link to={`/details/${movie.id}`}>
+                                        <img src={`${image_path}${movie.poster_path}`} alt={movie.title}/>
+                                        <span>{movie.title}</span>
+                                    </Link>
                                 </li>
                             )
                         })}
